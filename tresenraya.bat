@@ -19,7 +19,6 @@ SET C7=
 SET C8=
 SET C9=
 
-
 ::FIN PARTE1
 
 :Menu
@@ -43,18 +42,29 @@ ECHO.
 :: PARTE2
 ::     Usa el comando CHOICE para pedir las opciones posibles que van del 1 al 9
 CHOICE /C 123456789 /M "Selecciona una celda"
-::     Crea una variable llamada Seleccionada que almacene el valor seleccionado
-SET Seleccionada=
-::     Establece las 9 condiciones, para que cuando se seleccione el 1 el programa se dirija a la etiqueta OPCION1, y as­ sucesivamente hasta el 9.
-IF 
-:: Redirecciona a Menu
 
+::     Crea una variable llamada Seleccionada que almacene el valor seleccionado
+SET Seleccionada=%ERRORLEVEL%
+::     Establece las 9 condiciones, para que cuando se seleccione el 1 el programa se dirija a la etiqueta OPCION1, y as­ sucesivamente hasta el 9.
+IF %ERRORLEVEL%==1 GOTO OPCION1
+IF %ERRORLEVEL%==2 GOTO OPCION2
+IF %ERRORLEVEL%==3 GOTO OPCION3
+IF %ERRORLEVEL%==4 GOTO OPCION4
+IF %ERRORLEVEL%==5 GOTO OPCION5
+IF %ERRORLEVEL%==6 GOTO OPCION6
+IF %ERRORLEVEL%==7 GOTO OPCION7
+IF %ERRORLEVEL%==8 GOTO OPCION8
+IF %ERRORLEVEL%==9 GOTO OPCION9
+PAUSE   
+:: Redirecciona a Menu
+GOTO :Menu
 :: FIN PARTE2
 
 
 ::PARTE3
 ::     Crea la etiqueta OPCION1
-
+:OPCION1
+IF %C1%= 
 ::     Si la celda sea igual a espacio:
 ::          Cambia el valor de la celda, asignandole el valor que tiene la variable Turno
 ::          Incrementa el valor de contador en 1
