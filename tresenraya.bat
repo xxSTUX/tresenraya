@@ -1,10 +1,24 @@
 :: PARTE1
 ::      Apaga el ECHO
+@echo off
 
 ::      Crea la Etiqueta Inicio
+:Inicio
 
 ::      Define la siguientes variables: Contador, Turno, C1, C2, C3, C4, C5, C6, C7, C8, C9
 ::      Contador se inicia a 0, Turno se inicia como O y las C como un espacio en blanco.
+SET Contador=0
+SET Turno=O
+SET C1= 
+SET C2=
+SET C3=
+SET C4=
+SET C5=
+SET C6=
+SET C7=
+SET C8=
+SET C9=
+
 
 ::FIN PARTE1
 
@@ -28,11 +42,11 @@ ECHO.
 
 :: PARTE2
 ::     Usa el comando CHOICE para pedir las opciones posibles que van del 1 al 9
-
+CHOICE /C 123456789 /M "Selecciona una celda"
 ::     Crea una variable llamada Seleccionada que almacene el valor seleccionado
-
+SET Seleccionada=
 ::     Establece las 9 condiciones, para que cuando se seleccione el 1 el programa se dirija a la etiqueta OPCION1, y as­ sucesivamente hasta el 9.
-
+IF 
 :: Redirecciona a Menu
 
 :: FIN PARTE2
