@@ -142,11 +142,11 @@ ECHO.
 
 ::      Cambia el color a negro y verde
 
-::      Pon dos l要eas en blanco
+::      Pon dos lineas en blanco
 
 ::      Muestra un mensaje diciendo que turno es el ganador.
 
-::      Pon dos l要eas en blanco
+::      Pon dos lineas en blanco
 
 ::      Redirecciona a Inicio
 
@@ -160,11 +160,11 @@ ECHO.
 
 ::      Cambia el color a negro y azul
 
-::      Pon dos l要eas en blanco
+::      Pon dos lineas en blanco
 
 ::      Muestra un mensaje diciendo que se ha producido un empate.
 
-::      Pon dos l要eas en blanco
+::      Pon dos lineas en blanco
 
 ::      Redirecciona a Inicio
 
