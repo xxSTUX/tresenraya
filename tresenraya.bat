@@ -64,8 +64,11 @@ GOTO :Menu
 ::PARTE3
 ::     Crea la etiqueta OPCION1
 :OPCION1
-IF %C1%= 
+
 ::     Si la celda sea igual a espacio:
+IF %C1%= (
+    Else
+)
 ::          Cambia el valor de la celda, asignandole el valor que tiene la variable Turno
 ::          Incrementa el valor de contador en 1
 ::          Redirecciona a VerificarGanador
