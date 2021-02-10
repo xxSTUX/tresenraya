@@ -277,9 +277,8 @@ IF NOT "%C3%"==" " (
 ::      Si Contador a llegado a 9, redirecciona a la etiqueta Empate.
 IF "%Contador%"=="9" (
     GOTO Empate
-)
-ELSE (
-GOTO CambiarTurno 
+) ELSE (
+GOTO CambiarTurno
 )
 ::      Finalmente, redirecciona a CambiarTurno. (C½mo no hay ni ganador, ni empate, cambiamos el turno).
 :: FIN PARTE11
