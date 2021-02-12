@@ -183,12 +183,12 @@ GOTO Menu
 
 :: PARTE7
 ::      Crea la etiqueta VerificarGanador
-:VerificarGanador
 :: Horizontales
 ::      Si una de las celdas (C1), no estÿ vacia...
 ::           Si la primera es igual a la segunda (C1 y C2)...
 ::               Si la primera es igual a la tercera (C1 y C3)...
 ::                   Si todo lo anterior se cumple, ve a la etiqueta Ganador
+:VerificarGanador
 IF NOT "%C1%"==" " (
     IF "%C1%"=="%C2%" (
         IF "%C1%"=="%C3%" (
@@ -294,12 +294,13 @@ GOTO CambiarTurno
 ::      Redirecciona a Inicio
 :Ganador
 cls
-color a
+color 0A
 ECHO.
 ECHO.
 ECHO               Felidades! El jugador %Turno% ha ganado.
 ECHO.
 ECHO.
+PAUSE
 GOTO Inicio
 :: FIN PARTE12
 
@@ -314,11 +315,12 @@ GOTO Inicio
 ::      Redirecciona a Inicio
 :Empate
 cls
-color 1
+color 01
 ECHO.
 ECHO.
 ECHO                Se ha producido un empate!!
 ECHO.
 ECHO.
+PAUSE
 GOTO Inicio
 :: FIN PARTE13
